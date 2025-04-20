@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Diabetic Diagnosis</title>
+
+    <!-- Main CSS-->
+    <link href="{{ url_for('static', filename = 'css/main.css') }}" rel="stylesheet" media="all">
+
+    <style>
+        body {
+          background-image: url('{{ url_for('static', filename = 'images/diabetes.jpg') }}');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          background-size: 100% 100%;
+        }
+        </style>
+</head>
+
+<body >
+    <div class="page-wrapper p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    {% block content %} {% endblock %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

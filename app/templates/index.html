@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+                    <h2 class="title">Required Info</h2>
+                    <form method="POST" action="/detection">
+                        <div class="input-group">
+                            <input class="input--style-1" placeholder="Enter your name" type="text"  name="person">
+                        </div>
+                
+                        <div class="input-group">
+                            <input class="input--style-1" placeholder="number of times pregnant" type="text"  name="preg">
+                        </div>
+                        
+                        <div class="input-group">
+                            <input class="input--style-1" placeholder="enter glucose level" type="text"  name="glucose">
+                        </div>
+                        
+                         <div class="input-group">
+                            <input class="input--style-1" placeholder="enter the bp level" type="text"  name="bp">
+                        </div>
+                        
+                         <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="enter your skinthicknes" name="skinthick">
+                        </div>
+
+                        
+
+                        <div class="input-group">
+                            <input class="input--style-1" placeholder="enter the insulin level"  type="text"  name="insulin">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" placeholder="enter body mass index" type="text"  name="bmi">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" placeholder="enter the pedigree level" type="text"  name="pedigree">
+                        </div>
+                        
+                        <div class="input-group">
+                            <input class="input--style-1"   placeholder="enter your age" type="text" name="age">
+                        </div>
+
+
+                       
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                        </div>
+                    </form>
+ {% endblock content %}          
